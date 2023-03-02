@@ -18,7 +18,10 @@ const  AddNewSongs = (props) => {
         props.newEntryProperty(newEntry)
     }
     return ( 
-        
+        <form onSubmit={handleSubmit} className='form-grid'>
+
+            
+        </form>
      );
 }
  
