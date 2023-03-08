@@ -14,7 +14,15 @@ const MusicTable = (props) => {
                 </tr>
             </thead>
             <tbody>
-                {props.parentSongs.map((song)=>{
+                {props.parentSongs
+                .filter(song=>(
+                    song.title.toLowerCase().includes(props.userInput.toLowerCase()) || 
+                    song.artist.toLowerCase().includes(props.userInput.toLowerCase()) || 
+                    song.album.toLowerCase().includes(props.userInput.toLowerCase()) || 
+                    song.release_date.toLowerCase().includes(props.userInput.toLowerCase()) || 
+                    song.genre.toLowerCase().includes(props.userInput.toLowerCase()) 
+                    ))
+                .map((song)=>{
                     return (
                         <tr>
                         

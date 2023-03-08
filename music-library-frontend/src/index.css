@@ -11,26 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
 body {
   background-image: url('./Images/image-from-rawpixel-id-6036948-original.jpg');
   background-size: cover;
   background-position: center;
 }
 
+.nav{
+  color: white;
+}
+
 .border-box{
   border: 1px solid black;
   margin: 2px;
   padding: 2px;
-  text-align: justify;
-  color: whitesmoke;
+  color: white
   
 
 }
 .form-grid{
-  width: 30%;
-    margin: auto;
+  width: 40%;
     display: flex;
     color: white;
     flex-direction: column;
     align-items: flex-end;
+    
+}
+
+.app-search-bar {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
